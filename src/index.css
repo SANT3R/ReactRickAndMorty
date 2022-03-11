@@ -2,22 +2,42 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: "Get Schwifty";
+  src: url("./fonts/get_schwifty.ttf")
+}
 
 body {
   margin: 0;
   width: 100%;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "Get Schwifty";
+  font-family: -apple-system, BlinkMacSystemFont, "Get Schwifty", 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(34, 32, 32);
+  background: url(./componentes/images/fondo.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+  /* width: 53.3%; */
+  /* width: 80em; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 15px;
 }
 
 /*clases*/
@@ -42,10 +62,14 @@ code {
 /*identificadores*/
 #img-header{
   width: 100%;
-  height: 20em;
-  background: url('./componentes/images/header2.png') no-repeat center center;
-  /* filter: blur(1px); */
-  /* background-size:100% 100%; */
+  height: 25em;
+  background: url('./componentes/images/header4.png') no-repeat center center;
+  background-size:100% 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2px solid black;
 }
 
 #constructor{
@@ -58,32 +82,22 @@ code {
 }
 
 #nav-main{
-  width: 53.3%;
-  height: 6rem;
-  background-color: rgb(54, 52, 52);
+  width: 100%;
+  height: 5rem;
   display: flex;
   justify-content: center;
-  align-items: center
-}
-
-#main{
-  /* width: 53.3%; */
-  width: 80em;
-  height: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 15px;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.39);
 }
 
 #input{
   width: 10rem;
   height: 1.5rem;
+  font-family: "Get Schwifty";
 }
 
 #img-logo{
-  width: 10%;
-  height: 80%;
-  border-radius: 50%;
+  width: 5em;
+  height: 5em;
   margin-right: 5px;
 }

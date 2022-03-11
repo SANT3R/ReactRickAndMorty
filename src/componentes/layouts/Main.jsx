@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Input } from '../UI/Input'
-import logo from '../images/logo1.jpg'
+import pistola from '../images/pistola.png'
 
 export const Main = () => {
   const [personajes, setPersonajes] = useState([]);
@@ -55,13 +55,13 @@ export const Main = () => {
 
   return (
     <div id="constructor">
+      <header id='img-header'>
         <nav id="nav-main">
-          <img src={logo} alt="logo Rick y Morty" id='img-logo' />
+          <img src={pistola} alt="logo Rick y Morty" id='img-logo' />
           <Input tipo="text" idName= "input" down= {MostrarPersonajes} />
         </nav>
-        <main id="main">
-              
-        </main>
+      </header>
+        <main id="main"></main>
     </div>
   )
 }
